@@ -45,8 +45,8 @@ MaxKeepAliveRequests <%= node['apache']['keepaliverequests'] %>
 KeepAliveTimeout <%= node['apache']['keepalivetimeout'] %>
 
 #<IfModule unixd_module>
-User <%= node['apache']['user'] %>
-Group <%= node['apache']['group'] %>
+#User <%= node['apache']['user'] %>
+#Group <%= node['apache']['group'] %>
 #</IfModule>
 
 <% if node['apache']['version'] == '2.4' -%>
